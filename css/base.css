@@ -1,0 +1,41 @@
+pre {
+    margin-top: 3.44rem;
+}
+
+blockquote {
+    margin-top: 1.25rem;
+}
+.nowrap {
+    white-space: nowrap;
+}
+@media (max-width: 48em) {
+    table .btn {
+        font-size: 12px;
+        font-size: 3.5vw;
+    }
+}
+.mobile{
+    display:none;
+}
+#imgMobil{
+    display:block;
+}
+@media (max-width: 767px){
+    #desk{
+        display:none !important ;
+        visibility: hidden !important;
+    }
+    .mobile{
+        display: block !important;
+        visibility: visible !important;
+
+    }
+    #imgMobil{
+        display:none;
+    }
+    #imgMobil2{
+        display:block;
+    }
+}
+
+

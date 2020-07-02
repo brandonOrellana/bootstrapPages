@@ -6,12 +6,12 @@
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='css/bootstrap.css'>
-    
+    <link rel="stylesheet" href="css/base.css">
 </head>
 <body>
-    <div class="jumbotron" style="background-color:rgb(38, 214, 82);">
+    <div class="jumbotron jumbotron-fluid">
         <div class="container">
-            <div class="row">
+            <div class="row flex-xl-nowrap">
                 <header class="col-md-12">
                     <h1> A simple landin page example</h1>
                     <h2> sub title for support</h2>
@@ -27,43 +27,48 @@
 
     <div class="container">  
         <div class="row">
-            <div class="col-md-4 offset-md-4">
-                <div class="align-self-center">
-
-                </div>
+            <div class="offset-md-4 col-md-4  col-sm-6">
                 <h4>
                     Some text with <small>Secondary text</small>
                 </h4>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm-6 ">
                 <h4>
                     Add to your favorites
                     <small>
-                        <kbd><kbd>ctrl</kbd>+<kbd>d</kbd></kbd>
+                        <kbd class="nowrap"><kbd>ctrl</kbd>+<kbd>d</kbd></kbd>
                     </small>
                 </h4>
             </div>
         </div>
-
+<br>
         <div class="row">
-            <div class="col-md-4">
-<pre>
-&lt;p&gt;I love programming!&lt;/p&gt;
-&lt;p&gt;This paragraph is on my landing page&lt;/p&gt;
-&lt;br/&gt;
-&lt;br/&gt;
-&lt;p&gt;Bootstrap by example&lt;/p&gt;
-</pre>
+            <div class="col-md-3 col-xs-5">
+        <pre>
+        &lt;p&gt;I love programming!&lt;/p&gt;
+        &lt;p&gt;This paragraph is on my landing page&lt;/p&gt;
+        &lt;br/&gt;
+        &lt;br/&gt;
+        &lt;p&gt;Bootstrap by example&lt;/p&gt;
+        </pre>
             </div>
-            <div class="col-md-8">
-                <img src="imgs/desk2.jpg" class="img-fluid" alt="Responsive image">
+            <div class="col-md-9 col-xs-7">
+                <div id="desk">
+                    <img src="imgs/desk2.jpg" class="img-fluid overflow-hidden" alt="Responsive image">
+                </div>
+                <div class="mobile">
+                    <img src="imgs/mobile.png" class="img-fluid overflow-hidden" alt="Responsive image">
+                </div>
             </div>
         </div>
-
+<br>
         <div class="row">
             <div class="col-md-3">
-                <img src="imgs/icon.jpg" alt="..." class="img-thumbnail">
+                <div id="imgMobil">
+                    <img src="imgs/icon.jpg" alt="..." class="img-thumbnail">
+                </div>
             </div>
+            
             <div class="col-md-6">
                 <blockquote class="blockquote">
                     <p class="mb-0">
@@ -78,8 +83,13 @@
             <div class="col-md-3">
                 <img src="imgs/colorfyl_hot_air_balloon-1280x800.jpg" alt="..." class="img-thumbnail">
             </div>
+            <div class="col-md-3">
+                <div class="mobile">
+                    <img src="imgs/icon.jpg" alt="..." class="img-thumbnail">
+                </div>
+            </div>
         </div>
-
+<br>
         <div class="row">
             <div class="col-md-3">
                 <p class="text-left"><code>&lt;Left&gt;</code></p>
@@ -94,7 +104,7 @@
                 <p class="text-right">Right</p>
             </div>
         </div>
-
+<br>
         <div class="row">
             <div class="col-md-3">
                 <h3>Lowercase</h3>
@@ -125,6 +135,70 @@
                 </p>
             </div>
         </div> 
+<br>
+        <div class="row">
+            <div class="col-md-10 offset-md-1">
+                <table class="table table-striped table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th style="background-color: #28a745;">
+                                <h4 class="text-center">Free plan</h4>
+                            </th>
+                            <th style="background-color: #17a2b8;">
+                                <h4 class="text-center">Standar plan</h4>
+                            </th>
+                            <th style="background-color: #dc3545;">
+                                <h4 class="text-center">Premium plan</h4>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <h3 class="text-center">$0</h3>
+                            </td>
+                            <td>
+                                <h3 class="text-center">$ 99</h3>
+                            </td>
+                            <td>
+                                <h3 class="text-center">$ 999</h3>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Lorem ipsum</td>
+                            <td>Lorem ipsum</td>
+                            <td>Lorem ipsum</td>
+                        </tr>
+                        <tr>
+                            <td>Lorem ipsum</td>
+                            <td>Lorem ipsum</td>
+                            <td>Lorem ipsum</td>
+                        </tr>
+                        <tr>
+                            <td>Lorem ipsum</td>
+                            <td>Lorem ipsum</td>
+                            <td>Lorem ipsum</td>
+                        </tr>
+                        <tr>
+                            <td>-</td>
+                            <td>Dolor sit amet</td>
+                            <td>Lorem ipsum</td>
+                        </tr>
+                        <tr>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>Lorem ipsum</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#" class="btn btn-success btn-block">Purchase</a></td>
+                            <td><a href="#" class="btn btn-info btn-block">Purchase</a></td>
+                            <td><a href="#" class="btn btn-danger btn-block">Purchase</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
 
         <footer class="row jumbotron">
             <div class="col-md-2">
